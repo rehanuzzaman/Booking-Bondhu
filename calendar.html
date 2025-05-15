@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protest Calendar - Booking Bondhu</title>
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Booking Bondhu</h1>
+            <p>View all scheduled protests at Shahbag</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Book Protest</a></li>
+                <li><a href="calendar.html" class="active">Protest Calendar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="calendar-hero">
+            <div class="container">
+                <h2>Shahbag Protest Calendar</h2>
+                <p>View all scheduled protests for the next 30 days</p>
+            </div>
+        </div>
+
+        <div class="calendar-container container">
+            <div class="calendar-header">
+                <h3>Protest Schedule</h3>
+                <p>Shahbag is fully booked for the next 30 days</p>
+            </div>
+
+            <div class="calendar-grid" id="calendarGrid">
+                <!-- Calendar days will be inserted here by JavaScript -->
+            </div>
+        </div>
+
+        <div class="calendar-legend container">
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: var(--primary-color);"></div>
+                <span>Political Protest</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: var(--secondary-color);"></div>
+                <span>Social Movement</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: var(--accent-color);"></div>
+                <span>Student Protest</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #6c757d;"></div>
+                <span>Other Events</span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+       <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Booking Bondhu</h3>
+                    <p>Making protest organization easier since 2022</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="booking.html">Book Protest</a></li>
+                        <li><a href="calendar.html">Protest Calendar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: hello@rehanuzzaman.com</p>
+                    <p>Website: www.rehanuzzaman.com</p>
+                </div>
+            </div>
+            <div class="credits">
+                <p>Developed with ❤️ for CHAGOLER TIN NUMBER BACCHA KACCHA | © 2025 Rehanuz Zaman - All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="calendar.js"></script>
+</body>
+</html>

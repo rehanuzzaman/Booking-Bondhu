@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Protest - Booking Bondhu</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Booking Bondhu</h1>
+            <p>Reserve your protest at Shahbag Square</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html" class="active">Book Protest</a></li>
+                <li><a href="calendar.html">Protest Calendar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="booking-hero">
+            <div class="container">
+                <h2>Book Your Protest at Shahbag</h2>
+                <p>Fill out the form below to schedule your protest</p>
+            </div>
+        </div>
+
+        <div class="booking-form container">
+            <form id="protestForm">
+                <div class="form-group">
+                    <label for="protestTitle">Protest Title</label>
+                    <input type="text" id="protestTitle" name="protestTitle" required placeholder="e.g. Demand for Justice">
+                </div>
+
+                <div class="form-group">
+                    <label for="protestDate">Date</label>
+                    <input type="date" id="protestDate" name="protestDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="protestCause">Cause</label>
+                    <textarea id="protestCause" name="protestCause" rows="4" required placeholder="Briefly describe the cause of your protest"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="organizingBody">Organizing Body</label>
+                    <input type="text" id="organizingBody" name="organizingBody" required placeholder="Name of your organization">
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn-submit">Submit Booking</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="booking-info container">
+            <h3>Important Information</h3>
+            <ul>
+                <li><i class="fas fa-info-circle"></i> Shahbag Square is available for protests from 8:00 AM to 8:00 PM</li>
+                <li><i class="fas fa-info-circle"></i> Maximum duration for a single protest is 6 hours</li>
+                <li><i class="fas fa-info-circle"></i> You must provide proper identification of your organization</li>
+                <li><i class="fas fa-info-circle"></i> All protests must comply with local laws and regulations</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Booking Bondhu</h3>
+                    <p>Making protest organization easier since 2022</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="booking.html">Book Protest</a></li>
+                        <li><a href="calendar.html">Protest Calendar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: hello@rehanuzzaman.com</p>
+                    <p>Website: www.rehanuzzaman.com</p>
+                </div>
+            </div>
+            <div class="credits">
+                <p>Developed with ❤️ for CHAGOLER TIN NUMBER BACCHA KACCHA | © 2025 Rehanuz Zaman - All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for showing messages -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <i class="fas fa-exclamation-circle modal-icon"></i>
+                <h3 id="modalTitle">Booking Status</h3>
+                <p id="modalMessage">Your booking has been submitted successfully!</p>
+                <button id="modalButton" class="btn-modal">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="booking.js"></script>
+</body>
+</html>
